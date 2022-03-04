@@ -1,4 +1,4 @@
-ldap_servers: '{{ sasl_ldap_servers | join(",") }}'
+ldap_servers: {{ sasl_ldap_servers | join(" ") }}
 ldap_search_base: {{ sasl_ldap_base }}
 ldap_filter: mail=%u
 ldap_auth_method: fastbind
